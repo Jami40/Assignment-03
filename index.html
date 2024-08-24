@@ -15,9 +15,14 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
-                 'common-bg':'#E9E9E9'
-              }
+                 clifford: '#da373d',
+                'common-bg':'#E9E9E9',
+                'common-form':'#A0A0A0'
+               }
+      //         backgroundImage: {
+      //        'form-bg': "url('/assets/bg.jpg')",
+        
+      // }
             }
           }
         }
@@ -29,8 +34,8 @@
 
       </style>
 </head>
-<body class="manrope-font">
-    <header class="bg-gradient-to-r from-[rgb(255,255,255)] to-[rgba(255,255,255,0)]">
+<body class="manrope-font bg-[rgb(255,255,255)]">
+    <header class="bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(255,255,255,0)100%)]">
       <section class="md:container mx-auto mt-8">
         <nav>
           <div class="navbar px-5 flex justify-between">
@@ -52,7 +57,7 @@
               <div class="hidden lg:flex gap-5">
                 <i class="fa-solid fa-magnifying-glass  bg-[rgb(255,255,255)] rounded-full p-2 w-7 h-7 "></i>
                 <i class="fa-solid fa-cart-shopping bg-[rgb(255,255,255)] rounded-full p-2 w-7 h-7"></i>
-                <a class="btn bg-[rgb(171,239,95)] font-semibold text-base rounded-[32px] px-5 ">Book Consult <i class="fa-solid fa-arrow-right text-2xl bg-black rounded-full pl-1 h-8 w-8 -rotate-45 text-white"></i> </a>
+                <a class="btn bg-[rgb(171,239,95)] font-semibold text-base rounded-[32px] px-5 ">Book Consult <i class="fa-solid fa-arrow-right text-2xl bg-black rounded-full  h-8 w-8 -rotate-45 text-white"></i> </a>
               </div>
               <div>
                 <i class="fa-solid fa-bars lg:hidden rounded-full w-6 h-6 p-3"></i>
@@ -185,7 +190,7 @@
 
       </section>
 
-      <section class="md:container mx-auto mt-16">
+      <section class="md:container mx-auto my-16">
         <div>
           <div class="text-center mb-8">
             <button class="bg-[rgba(171,239,95,0.2)] rounded-[32px] px-5 py-2"><i class="fa-solid fa-arrow-right"></i>Explore our Latest works</button>
@@ -233,11 +238,61 @@
         </div>
 
       </section>
+     <!-- Form-Section -->
+     <section style="background-image: url('/assets/bg.jpg');" class=" m-1 bg-cover " >
+        <div class="flex flex-col">
+          <div class="text-center mb-8 pt-16">
+            <button class="bg-[rgba(171,239,95,0.2)] rounded-[32px] px-5 py-2"><i class="fa-solid fa-arrow-right"></i>Let’s Connect</button>
+            <h2 class="text-2xl lg:text-[40px] font-extrabold my-5">Let’s Discuss Next Project</h2>
+            <p class="text-[rgb(73,73,73)] lg:max-w-2xl mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+          </div>
+          <div class="">
+            <div class="lg:w-3/4 p-5 lg:p-0 mx-auto pb-16">
+            <form class="grid col-span-1 lg:grid-cols-2 grid-rows-3 gap-4 lg:gap-7">
+              <input type="email" name="" id="" placeholder="Your name*" class="bg-white px-5 py-3 rounded-[64px] text-common-form font-medium">
+              <input type="email" name="" id="" placeholder="Last Name*" class="bg-white px-5 py-3 rounded-[64px] text-common-form font-medium">
+              <input type="email" name="" id="" placeholder="Phone Number*" class="bg-white px-5 py-3 rounded-[64px] text-common-form font-medium">
+              <input type="email" name="" id="" placeholder="Email Number*" class="bg-white text-comon-form font-medium px-5 py-3 rounded-[64px]">
+              <!-- <textarea name="jami" id="" placeholder="Write your message here" class="lg:col-span-2 rounded-[32px] h-[200px]"></textarea> -->
+               
+              <textarea name="comment" id="" class="bg-white rounded-[32px] text-common-form font-medium px-5 py-4 col-span-1 lg:col-span-2 row-span-4 lg:row-span-4" placeholder="Write your message here"></textarea>
+            </form>
+            <div class="mt-9 pb-20">
+              <button class="w-full bg-[rgb(171,239,95)] py-2 text-[20px] font-extrabold rounded-[32px]">Send Mail  <i class="fa-solid fa-arrow-right text-2xl bg-black rounded-full h-8 w-8 -rotate-45 text-white"></i></button>
+            </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section> 
 
     </main>
 
-    <footer>
-
+    <footer class="footer footer-center bg-[rgb(28,28,28)] text-primary-content p-10 mt-2">
+      <aside>
+        <a class="text-[rgb(233,233,233)] font-bold text-2xl lg:text-3xl pb-5"><i class="fa-solid fa-arrow-right text-black text-2xl bg-[rgb(171,239,95)] rounded-full  h-8 w-8 -rotate-45 mr-2"></i>Rinterio</a>
+        <p class="text-base text-[rgb(115,115,115)] font-medium lg:w-[70%]">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </aside>
+      <nav>
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-col lg:flex-row gap-[40px] lg:gap-[120px]">
+            <a class="text-base text-[rgb(233,233,233)]" href="">Home</a>
+            <a class="text-base text-[rgb(233,233,233)]" href="">Services</a>
+            <a class="text-base text-[rgb(233,233,233)]" href="">Portfolio</a>
+            <a class="text-base text-[rgb(233,233,233)]" href="">Blogs</a>
+            <a class="text-base text-[rgb(233,233,233)]" href="">Contact Us</a>
+          </div>
+          <div class="mx-auto mt-[20px] lg:mt-[30px]">
+            <button class="btn w-[300px] lg:w-[212px] bg-[rgb(171,239,95)] font-semibold text-base rounded-[32px] px-5 ">Book Consult <i class="fa-solid fa-arrow-right text-2xl bg-black rounded-full h-8 w-8 -rotate-45 text-white"></i>
+            
+            </button>
+          </div>
+        </div>
+      </nav>
     </footer>
     
 </body>
