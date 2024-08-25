@@ -32,6 +32,11 @@
           font-family: "Manrope", sans-serif;
         }
 
+        .background{
+          background-image: url(/assets/bg.png);
+          background-size: cover;
+        }
+
       </style>
 </head>
 <body class="manrope-font bg-[rgb(255,255,255)]">
@@ -55,8 +60,8 @@
                 </ul>
               </div>
               <div class="hidden lg:flex gap-5">
-                <i class="fa-solid fa-magnifying-glass  bg-[rgb(255,255,255)] rounded-full p-2 w-7 h-7 "></i>
-                <i class="fa-solid fa-cart-shopping bg-[rgb(255,255,255)] rounded-full p-2 w-7 h-7"></i>
+                <i class="fa-solid fa-magnifying-glass border-2 px-2 py-2  bg-[rgb(255,255,255)] rounded-full  "></i>
+                <i class="fa-solid fa-cart-shopping border-2 bg-[rgb(255,255,255)] rounded-full  px-2 py-2"></i>
                 <a class="btn bg-[rgb(171,239,95)] font-semibold text-base rounded-[32px] px-5 ">Book Consult <i class="fa-solid fa-arrow-right text-2xl bg-black rounded-full  h-8 w-8 -rotate-45 text-white"></i> </a>
               </div>
               <div>
@@ -239,20 +244,20 @@
 
       </section>
 
-     <section>
-      <div class="hero bg-base-200 py-16 p-5 lg:p-0">
-        <div class="hero-content flex-col lg:flex-row gap-5 bg-white rounded-2xl lg:container mx-auto">
+     <section class="">
+      <div class="hero bg-base-200 p-5 lg:p-0">
+        <div class="hero-content flex-col lg:flex-col-reverse gap-5 bg-white rounded-2xl lg:container mx-auto lg:my-7 lg:py-12">
           <img
             src="assets/image1.png"
-            class="lg:max-w-sm rounded-lg shadow-2xl" />
-          <div>
-            
-            <h2 class="text-5xl font-extrabold">Don't just take our words</h2>
-            <p class="text-[rgb(73,73,73)] py-4">
+            class="lg:max-w-3xl rounded-lg shadow-2xl" />
+          <div class="text-center">
+            <button class="bg-[rgba(171,239,95,0.2)] rounded-[32px] px-5 py-2 mb-3"><i class="fa-solid fa-arrow-right pr-2"></i>Clients Happy</button>
+            <h2 class="text-2xl lg:text-5xl font-extrabold">Don't just take our words</h2>
+            <p class="text-[rgb(73,73,73)] w-full lg:w-[70%] mx-auto py-4">
               Over time, we have the privilege of bringing smiles and satisfaction to a multitude of clients.Our commitment to excellence has resulted in a track record of delighting customers across various projects.
              
             </p>
-            <button class="bg-[rgba(171,239,95,0.2)] rounded-[32px] px-5 py-2 mb-3"><i class="fa-solid fa-arrow-right pr-2"></i>Clients Happy</button>
+            
             
           </div>
         </div>
@@ -262,7 +267,7 @@
 
          
      <!-- Form-Section -->
-     <section style="background-image: url('/assets/bg.png');" class=" m-1 bg-cover " >
+     <section class="background m-1 bg-cover " >
         <div class="flex flex-col">
           <div class="text-center mb-8 pt-16">
             <button class="bg-[rgba(171,239,95,0.2)] rounded-[32px] px-5 py-2"><i class="fa-solid fa-arrow-right pr-2"></i>Let’s Connect</button>
@@ -276,9 +281,7 @@
               <input type="email" name="" id="" placeholder="Your name*" class="bg-white px-5 py-3 rounded-[64px] text-common-form font-medium">
               <input type="email" name="" id="" placeholder="Last Name*" class="bg-white px-5 py-3 rounded-[64px] text-common-form font-medium">
               <input type="email" name="" id="" placeholder="Phone Number*" class="bg-white px-5 py-3 rounded-[64px] text-common-form font-medium">
-              <input type="email" name="" id="" placeholder="Email Number*" class="bg-white text-comon-form font-medium px-5 py-3 rounded-[64px]">
-              <!-- <textarea name="jami" id="" placeholder="Write your message here" class="lg:col-span-2 rounded-[32px] h-[200px]"></textarea> -->
-               
+              <input type="email" name="" id="" placeholder="Email Number*" class="bg-white text-comon-form font-medium px-5 py-3 rounded-[64px]"> 
               <textarea name="comment" id="" class="bg-white rounded-[32px] text-common-form font-medium px-5 py-4 col-span-1 lg:col-span-2 row-span-4 lg:row-span-4" placeholder="Write your message here"></textarea>
             </form>
             <div class="mt-9 pb-20">
