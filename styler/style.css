@@ -1,4 +1,6 @@
-.form-bg{
-    background-image: url('../assets/bg.png');
+.f-bg{
+    background-image: url('../assets/bg.jpg');
+    background-position: contain;
+    background-repeat: no-repeat;
     background-size: cover;
 }
